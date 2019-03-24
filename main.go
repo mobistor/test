@@ -7,6 +7,7 @@ import (
 )
 func main() {
 	fmt.Println("test2")
+	fmt.Println("test3")
 	r := gin.Default()
 	r.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"alive": true})
